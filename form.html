@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Лабораторна №1 – Форма (варіант 1)</title>
+  </head>
+  <body>
+    <header>
+      <h1>Проєктування та розробка веб-застосунків</h1>
+      <h2>Лабораторна робота №1</h2>
+      <h3>Виконав: Чайка Назар</h3>
+      <h3>Варіант №17</h3>
+      <hr />
+    </header>
+    <a href="index.html">На головну</a>
+    <h2>Завдання</h2>
+    <p>
+      Необхідно розробити форму для введення результатів поточної сесії у
+      веб-систему.
+    </p>
+
+    <h2>Форма для введення результатів поточної сесії</h2>
+
+    <form action="" method="post">
+      <fieldset>
+        <legend>Дані про студента</legend>
+
+        <label
+          >ПІБ студента:
+          <input type="text" name="student_name" required /> </label
+        ><br /><br />
+
+        <label
+          >Група:
+          <select name="group" required>
+            <option value="">-- Оберіть групу --</option>
+            <option>КН-31</option>
+            <option>КН-32</option>
+          </select> </label
+        ><br /><br />
+
+        <label
+          >Оцінка:
+          <input
+            type="number"
+            name="grade"
+            min="0"
+            max="100"
+            required
+          /> </label
+        ><br /><br />
+
+        <label
+          >Дата проведення:
+          <input type="date" name="exam_date" required />
+        </label>
+      </fieldset>
+      <br />
+
+      <fieldset>
+        <legend>Дані про залік/іспит</legend>
+
+        <label
+          >Дисципліна:
+          <select name="subject" required>
+            <option value="">-- Оберіть дисципліну --</option>
+            <option>Проектування та розробка веб-застосувань</option>
+            <option>Проектування інформаційних систем</option>
+            <option>Програмувавння .Net</option>
+            <option>Науковий образ світу</option>
+          </select> </label
+        ><br /><br />
+
+        <label>
+          <input type="radio" name="exam_type" value="exam" required /> Іспит
+        </label>
+        <label>
+          <input type="radio" name="exam_type" value="credit" /> Залік </label
+        ><br /><br />
+
+        <label
+          >Прізвище викладача:
+          <input type="text" name="teacher" required />
+        </label>
+      </fieldset>
+      <br />
+
+      <button type="submit">Відправити</button>
+      <button type="reset">Очистити</button>
+    </form>
+  </body>
+</html>
